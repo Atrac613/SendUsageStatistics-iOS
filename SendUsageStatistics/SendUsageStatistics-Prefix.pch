@@ -1,0 +1,30 @@
+//
+// Prefix header for all source files of the 'SendUsageStatistics' target in the 'SendUsageStatistics' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+// Dispatch period in seconds
+#define kGANDispatchPeriodSec 10
+
+#define SEND_USAGE_STATISTICS_ALERT_KEY @"send_usage_statistics_alert_key"
+#define SEND_USAGE_STATISTICS_KEY @"send_usage_statistics_key"
+#define GA_TRACKING_ID @"UA-1167116-22"
+
+// GA Track Code written by
+// http://d.hatena.ne.jp/ninjinkun/20110115/1295074900
+
+#import "GANTracker.h"
+
+#define GA_TRACK_PAGE(PAGE) { NSError *error; if (![[GANTracker sharedTracker] trackPageview:[NSString stringWithFormat:@"/%@", PAGE] withError:&error]) { NSLog(@"%@",error.helpAnchor); } };
+
+#define GA_TRACK_CLASS GA_TRACK_PAGE(NSStringFromClass([self class]));

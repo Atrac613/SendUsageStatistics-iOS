@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F0EADB15765184002CF30C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EADA15765184002CF30C /* UIKit.framework */; };
+		06F0EADD15765184002CF30C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EADC15765184002CF30C /* Foundation.framework */; };
+		06F0EADF15765184002CF30C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EADE15765184002CF30C /* CoreGraphics.framework */; };
+		06F0EAE515765184002CF30C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06F0EAE315765184002CF30C /* InfoPlist.strings */; };
+		06F0EAE715765184002CF30C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0EAE615765184002CF30C /* main.m */; };
+		06F0EAEB15765184002CF30C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0EAEA15765184002CF30C /* AppDelegate.m */; };
+		06F0EAEE15765184002CF30C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F0EAEC15765184002CF30C /* MainStoryboard.storyboard */; };
+		06F0EAF115765184002CF30C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0EAF015765184002CF30C /* MasterViewController.m */; };
+		06F0EAFC15765185002CF30C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EAFB15765185002CF30C /* SenTestingKit.framework */; };
+		06F0EAFD15765185002CF30C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EADA15765184002CF30C /* UIKit.framework */; };
+		06F0EAFE15765185002CF30C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EADC15765184002CF30C /* Foundation.framework */; };
+		06F0EB0615765185002CF30C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06F0EB0415765185002CF30C /* InfoPlist.strings */; };
+		06F0EB0915765185002CF30C /* SendUsageStatisticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0EB0815765185002CF30C /* SendUsageStatisticsTests.m */; };
+		06F0EB1515765511002CF30C /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EB1415765511002CF30C /* libGoogleAnalytics.a */; };
+		06F0EB1715765677002CF30C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EB1615765677002CF30C /* libsqlite3.0.dylib */; };
+		06F0EB191576569C002CF30C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EB181576569C002CF30C /* CFNetwork.framework */; };
+		06F0EB1B15766340002CF30C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06F0EB1A1576633F002CF30C /* Settings.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06F0EAFF15765185002CF30C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06F0EACD15765182002CF30C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06F0EAD515765183002CF30C;
+			remoteInfo = SendUsageStatistics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06F0EAD615765183002CF30C /* SendUsageStatistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendUsageStatistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F0EADA15765184002CF30C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06F0EADC15765184002CF30C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06F0EADE15765184002CF30C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06F0EAE215765184002CF30C /* SendUsageStatistics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SendUsageStatistics-Info.plist"; sourceTree = "<group>"; };
+		06F0EAE415765184002CF30C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06F0EAE615765184002CF30C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06F0EAE815765184002CF30C /* SendUsageStatistics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SendUsageStatistics-Prefix.pch"; sourceTree = "<group>"; };
+		06F0EAE915765184002CF30C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		06F0EAEA15765184002CF30C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		06F0EAED15765184002CF30C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		06F0EAEF15765184002CF30C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		06F0EAF015765184002CF30C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		06F0EAFA15765185002CF30C /* SendUsageStatisticsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendUsageStatisticsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F0EAFB15765185002CF30C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		06F0EB0315765185002CF30C /* SendUsageStatisticsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SendUsageStatisticsTests-Info.plist"; sourceTree = "<group>"; };
+		06F0EB0515765185002CF30C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06F0EB0715765185002CF30C /* SendUsageStatisticsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendUsageStatisticsTests.h; sourceTree = "<group>"; };
+		06F0EB0815765185002CF30C /* SendUsageStatisticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendUsageStatisticsTests.m; sourceTree = "<group>"; };
+		06F0EB1315765511002CF30C /* GANTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
+		06F0EB1415765511002CF30C /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
+		06F0EB1615765677002CF30C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		06F0EB181576569C002CF30C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		06F0EB1A1576633F002CF30C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06F0EAD315765183002CF30C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F0EADB15765184002CF30C /* UIKit.framework in Frameworks */,
+				06F0EADD15765184002CF30C /* Foundation.framework in Frameworks */,
+				06F0EADF15765184002CF30C /* CoreGraphics.framework in Frameworks */,
+				06F0EB1515765511002CF30C /* libGoogleAnalytics.a in Frameworks */,
+				06F0EB1715765677002CF30C /* libsqlite3.0.dylib in Frameworks */,
+				06F0EB191576569C002CF30C /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06F0EAF615765185002CF30C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F0EAFC15765185002CF30C /* SenTestingKit.framework in Frameworks */,
+				06F0EAFD15765185002CF30C /* UIKit.framework in Frameworks */,
+				06F0EAFE15765185002CF30C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06F0EACB15765182002CF30C = {
+			isa = PBXGroup;
+			children = (
+				06F0EAE015765184002CF30C /* SendUsageStatistics */,
+				06F0EB0115765185002CF30C /* SendUsageStatisticsTests */,
+				06F0EAD915765183002CF30C /* Frameworks */,
+				06F0EAD715765183002CF30C /* Products */,
+				06F0EB1215765511002CF30C /* Library */,
+			);
+			sourceTree = "<group>";
+		};
+		06F0EAD715765183002CF30C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06F0EAD615765183002CF30C /* SendUsageStatistics.app */,
+				06F0EAFA15765185002CF30C /* SendUsageStatisticsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06F0EAD915765183002CF30C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06F0EB1615765677002CF30C /* libsqlite3.0.dylib */,
+				06F0EB181576569C002CF30C /* CFNetwork.framework */,
+				06F0EADA15765184002CF30C /* UIKit.framework */,
+				06F0EADC15765184002CF30C /* Foundation.framework */,
+				06F0EADE15765184002CF30C /* CoreGraphics.framework */,
+				06F0EAFB15765185002CF30C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06F0EAE015765184002CF30C /* SendUsageStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				06F0EAE915765184002CF30C /* AppDelegate.h */,
+				06F0EAEA15765184002CF30C /* AppDelegate.m */,
+				06F0EAEC15765184002CF30C /* MainStoryboard.storyboard */,
+				06F0EAEF15765184002CF30C /* MasterViewController.h */,
+				06F0EAF015765184002CF30C /* MasterViewController.m */,
+				06F0EAE115765184002CF30C /* Supporting Files */,
+			);
+			path = SendUsageStatistics;
+			sourceTree = "<group>";
+		};
+		06F0EAE115765184002CF30C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06F0EAE215765184002CF30C /* SendUsageStatistics-Info.plist */,
+				06F0EAE315765184002CF30C /* InfoPlist.strings */,
+				06F0EAE615765184002CF30C /* main.m */,
+				06F0EAE815765184002CF30C /* SendUsageStatistics-Prefix.pch */,
+				06F0EB1A1576633F002CF30C /* Settings.bundle */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06F0EB0115765185002CF30C /* SendUsageStatisticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				06F0EB0715765185002CF30C /* SendUsageStatisticsTests.h */,
+				06F0EB0815765185002CF30C /* SendUsageStatisticsTests.m */,
+				06F0EB0215765185002CF30C /* Supporting Files */,
+			);
+			path = SendUsageStatisticsTests;
+			sourceTree = "<group>";
+		};
+		06F0EB0215765185002CF30C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06F0EB0315765185002CF30C /* SendUsageStatisticsTests-Info.plist */,
+				06F0EB0415765185002CF30C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06F0EB1215765511002CF30C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				06F0EB1315765511002CF30C /* GANTracker.h */,
+				06F0EB1415765511002CF30C /* libGoogleAnalytics.a */,
+			);
+			name = Library;
+			path = SendUsageStatistics/Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06F0EAD515765183002CF30C /* SendUsageStatistics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06F0EB0C15765185002CF30C /* Build configuration list for PBXNativeTarget "SendUsageStatistics" */;
+			buildPhases = (
+				06F0EAD215765183002CF30C /* Sources */,
+				06F0EAD315765183002CF30C /* Frameworks */,
+				06F0EAD415765183002CF30C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendUsageStatistics;
+			productName = SendUsageStatistics;
+			productReference = 06F0EAD615765183002CF30C /* SendUsageStatistics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06F0EAF915765185002CF30C /* SendUsageStatisticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06F0EB0F15765185002CF30C /* Build configuration list for PBXNativeTarget "SendUsageStatisticsTests" */;
+			buildPhases = (
+				06F0EAF515765185002CF30C /* Sources */,
+				06F0EAF615765185002CF30C /* Frameworks */,
+				06F0EAF715765185002CF30C /* Resources */,
+				06F0EAF815765185002CF30C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06F0EB0015765185002CF30C /* PBXTargetDependency */,
+			);
+			name = SendUsageStatisticsTests;
+			productName = SendUsageStatisticsTests;
+			productReference = 06F0EAFA15765185002CF30C /* SendUsageStatisticsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06F0EACD15765182002CF30C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = atrac613.io;
+			};
+			buildConfigurationList = 06F0EAD015765182002CF30C /* Build configuration list for PBXProject "SendUsageStatistics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06F0EACB15765182002CF30C;
+			productRefGroup = 06F0EAD715765183002CF30C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06F0EAD515765183002CF30C /* SendUsageStatistics */,
+				06F0EAF915765185002CF30C /* SendUsageStatisticsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06F0EAD415765183002CF30C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F0EAE515765184002CF30C /* InfoPlist.strings in Resources */,
+				06F0EAEE15765184002CF30C /* MainStoryboard.storyboard in Resources */,
+				06F0EB1B15766340002CF30C /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06F0EAF715765185002CF30C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F0EB0615765185002CF30C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06F0EAF815765185002CF30C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06F0EAD215765183002CF30C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F0EAE715765184002CF30C /* main.m in Sources */,
+				06F0EAEB15765184002CF30C /* AppDelegate.m in Sources */,
+				06F0EAF115765184002CF30C /* MasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06F0EAF515765185002CF30C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F0EB0915765185002CF30C /* SendUsageStatisticsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06F0EB0015765185002CF30C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06F0EAD515765183002CF30C /* SendUsageStatistics */;
+			targetProxy = 06F0EAFF15765185002CF30C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06F0EAE315765184002CF30C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06F0EAE415765184002CF30C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		06F0EAEC15765184002CF30C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06F0EAED15765184002CF30C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		06F0EB0415765185002CF30C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06F0EB0515765185002CF30C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06F0EB0A15765185002CF30C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06F0EB0B15765185002CF30C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06F0EB0D15765185002CF30C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SendUsageStatistics/SendUsageStatistics-Prefix.pch";
+				INFOPLIST_FILE = "SendUsageStatistics/SendUsageStatistics-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SendUsageStatistics/Library\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		06F0EB0E15765185002CF30C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SendUsageStatistics/SendUsageStatistics-Prefix.pch";
+				INFOPLIST_FILE = "SendUsageStatistics/SendUsageStatistics-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SendUsageStatistics/Library\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		06F0EB1015765185002CF30C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SendUsageStatistics.app/SendUsageStatistics";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SendUsageStatistics/SendUsageStatistics-Prefix.pch";
+				INFOPLIST_FILE = "SendUsageStatisticsTests/SendUsageStatisticsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		06F0EB1115765185002CF30C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SendUsageStatistics.app/SendUsageStatistics";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SendUsageStatistics/SendUsageStatistics-Prefix.pch";
+				INFOPLIST_FILE = "SendUsageStatisticsTests/SendUsageStatisticsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06F0EAD015765182002CF30C /* Build configuration list for PBXProject "SendUsageStatistics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06F0EB0A15765185002CF30C /* Debug */,
+				06F0EB0B15765185002CF30C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06F0EB0C15765185002CF30C /* Build configuration list for PBXNativeTarget "SendUsageStatistics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06F0EB0D15765185002CF30C /* Debug */,
+				06F0EB0E15765185002CF30C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		06F0EB0F15765185002CF30C /* Build configuration list for PBXNativeTarget "SendUsageStatisticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06F0EB1015765185002CF30C /* Debug */,
+				06F0EB1115765185002CF30C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06F0EACD15765182002CF30C /* Project object */;
+}
