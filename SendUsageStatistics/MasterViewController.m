@@ -50,7 +50,7 @@
 - (void)showSendUsageStatisticsAlert:(BOOL)force {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if (![[defaults objectForKey:SEND_USAGE_STATISTICS_ALERT_KEY] boolValue] || force) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Send usage statistics?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"] message:NSLocalizedString(@"SEND_USAGE_STATISTICS", @"") delegate:self cancelButtonTitle:NSLocalizedString(@"NO", @"") otherButtonTitles:NSLocalizedString(@"YES", @""), nil];
         [alert show];
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068CB1A81590C3FA006DA260 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068CB1A61590C3FA006DA260 /* Localizable.strings */; };
+		068CB1AC1590C417006DA260 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068CB1AA1590C417006DA260 /* Localizable.strings */; };
 		06F0EADB15765184002CF30C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EADA15765184002CF30C /* UIKit.framework */; };
 		06F0EADD15765184002CF30C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EADC15765184002CF30C /* Foundation.framework */; };
 		06F0EADF15765184002CF30C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0EADE15765184002CF30C /* CoreGraphics.framework */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		068CB1A71590C3FA006DA260 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Localizable.strings; sourceTree = "<group>"; };
+		068CB1AB1590C417006DA260 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = SendUsageStatistics/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		06F0EAD615765183002CF30C /* SendUsageStatistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendUsageStatistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F0EADA15765184002CF30C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		06F0EADC15765184002CF30C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,6 +94,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		068CB1A31590C3CD006DA260 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				068CB1A91590C407006DA260 /* en.lproj */,
+				068CB1A51590C3FA006DA260 /* ja.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		068CB1A51590C3FA006DA260 /* ja.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				068CB1A61590C3FA006DA260 /* Localizable.strings */,
+			);
+			name = ja.lproj;
+			path = SendUsageStatistics/ja.lproj;
+			sourceTree = "<group>";
+		};
+		068CB1A91590C407006DA260 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				068CB1AA1590C417006DA260 /* Localizable.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
 		06F0EACB15765182002CF30C = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +128,7 @@
 				06F0EAD915765183002CF30C /* Frameworks */,
 				06F0EAD715765183002CF30C /* Products */,
 				06F0EB1215765511002CF30C /* Library */,
+				068CB1A31590C3CD006DA260 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +262,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = 06F0EACB15765182002CF30C;
 			productRefGroup = 06F0EAD715765183002CF30C /* Products */;
@@ -251,6 +283,8 @@
 				06F0EAE515765184002CF30C /* InfoPlist.strings in Resources */,
 				06F0EAEE15765184002CF30C /* MainStoryboard.storyboard in Resources */,
 				06F0EB1B15766340002CF30C /* Settings.bundle in Resources */,
+				068CB1A81590C3FA006DA260 /* Localizable.strings in Resources */,
+				068CB1AC1590C417006DA260 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +344,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		068CB1A61590C3FA006DA260 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068CB1A71590C3FA006DA260 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		068CB1AA1590C417006DA260 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068CB1AB1590C417006DA260 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		06F0EAE315765184002CF30C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -465,6 +515,7 @@
 				06F0EB0E15765185002CF30C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06F0EB0F15765185002CF30C /* Build configuration list for PBXNativeTarget "SendUsageStatisticsTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +524,7 @@
 				06F0EB1115765185002CF30C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
